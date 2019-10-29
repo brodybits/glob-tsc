@@ -1,6 +1,6 @@
 {
   "name": "glob-tsc",
-  "version": "0.0.1",
+  "version": "0.0.2-dev",
   "description": "Typescript compiler wrapper to support 'filesGlob' tsconfig.json file option",
   "main": "bin/glob-tsc.js",
   "files": [
