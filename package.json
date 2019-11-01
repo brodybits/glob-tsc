@@ -12,7 +12,7 @@
     "glob-tsc": "./bin/glob-tsc.js"
   },
   "scripts": {
-    "checkjs": "node bin/glob-tsc.js --allowJs --checkJs --noEmit --resolveJsonModule --target es5 --strictFunctionTypes --strictBindCallApply --noImplicitThis -g bin/**/*.js,test/**/*.js",
+    "checkjs": "node bin/glob-tsc.js --allowJs --checkJs --noEmit --resolveJsonModule --target es5 --strictFunctionTypes --strictBindCallApply --noImplicitThis --strictNullChecks -g bin/**/*.js,test/**/*.js",
     "test": "npm-run-all checkjs test:mocha",
     "test:mocha": "mocha --timeout 5000",
     "test:watch": "_mocha --watch"
