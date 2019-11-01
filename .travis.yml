@@ -8,5 +8,4 @@ node_js:
 os:
   - linux
   - windows
-  # FUTURE TBD:
-  # - osx
+  - osx
