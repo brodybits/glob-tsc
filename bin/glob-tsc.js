@@ -6,7 +6,11 @@ var spawn = require('cross-spawn'),
     commandArgs = options.unknown.concat(helper.resolveTSFiles()),
     proc = spawn(helper.getTSCCommand(), commandArgs, { stdio: 'inherit' });
 
-proc.on('exit', function (code, signal) {
+/**
+ * @param {number} code
+ * @param {number} signal
+ */
+function onExit (code, signal) {
     process.on('exit', function(){
         if (signal) {
             process.kill(process.pid, signal);
@@ -14,7 +18,9 @@ proc.on('exit', function (code, signal) {
             process.exit(code);
         }
     });
-});
+}
+
+proc.on('exit', onExit);
 
 // terminate children.
 process.on('SIGINT', function () {

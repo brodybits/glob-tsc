@@ -12,7 +12,7 @@
     "glob-tsc": "./bin/glob-tsc.js"
   },
   "scripts": {
-    "checkjs": "node bin/glob-tsc.js --allowJs --checkJs --noEmit --resolveJsonModule --target es5 -g bin/**/*.js,test/**/*.js",
+    "checkjs": "node bin/glob-tsc.js --allowJs --checkJs --noEmit --resolveJsonModule --target es5 --strict -g bin/**/*.js,test/**/*.js",
     "test": "npm-run-all checkjs test:mocha",
     "test:mocha": "mocha --timeout 5000",
     "test:watch": "_mocha --watch"
@@ -28,7 +28,11 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/cross-spawn": "^6.0.1",
+    "@types/glob": "^7.1.1",
     "@types/mocha": "^5.2.7",
+    "@types/mock-require": "^2.0.0",
     "@types/node": "^12.11.7",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",

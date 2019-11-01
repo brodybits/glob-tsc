@@ -4,6 +4,8 @@ var expect = require('chai').expect,
 
 
 describe('program-helper', function () {
+    // FUTURE TODO DEFINE EXPLICITLY in lib/program-helper.js:
+    /** @type {Record<string, Function>} */
     var helper;
 
     beforeEach(function () {
