@@ -1,5 +1,8 @@
 var expect = require('chai').expect;
 
+/**
+ * @constructor
+ */
 var Process = function () {
     var listeners = {};
 
