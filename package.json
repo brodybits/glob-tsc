@@ -36,9 +36,6 @@
     "npm-run-all": "^4.1.5",
     "typescript": "^3.6.4"
   },
-  "peerDependencies": {
-    "typescript": "^3.0.0"
-  },
   "dependencies": {
     "commander": "^3.0.2",
     "cross-spawn": "^7.0.1",
