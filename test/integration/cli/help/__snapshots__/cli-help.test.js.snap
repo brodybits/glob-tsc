@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bin/glob-tsc.js --help 1`] = `
+"Usage:  glob-tsc [options]
+
+Options:
+  -V, --version               output the version number
+  -f, --tsconfig-file <path>  tsconfig.json file location. Default 
+                              ./tsconfig.json (default: \\"tsconfig.json\\")
+  -g, --files-glob <globs>    File globs (default: [])
+  -h, --help                  output usage information"
+`;
