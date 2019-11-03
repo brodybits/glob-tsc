@@ -13,6 +13,7 @@
   },
   "scripts": {
     "checkjs": "node bin/glob-tsc.js --allowJs --checkJs --noEmit --resolveJsonModule --target es5 -g bin/**/*.js,test/**/*.js",
+    "stryker": "stryker run",
     "test": "npm-run-all checkjs test:mocha",
     "test:mocha": "mocha --timeout 5000",
     "test:watch": "_mocha --watch"
