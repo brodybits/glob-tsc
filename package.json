@@ -13,6 +13,7 @@
   },
   "scripts": {
     "checkjs": "node bin/glob-tsc.js --allowJs --checkJs --noEmit --resolveJsonModule --target es5 -g bin/**/*.js,test/**/*.js",
+    "stryker": "stryker run",
     "test": "npm-run-all checkjs test:mocha",
     "test:mocha": "mocha --timeout 5000",
     "test:watch": "_mocha --watch"
@@ -28,6 +29,9 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@stryker-mutator/core": "^2.1.0",
+    "@stryker-mutator/html-reporter": "^2.1.0",
+    "@stryker-mutator/javascript-mutator": "^2.1.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.11.7",
     "chai": "^4.2.0",
