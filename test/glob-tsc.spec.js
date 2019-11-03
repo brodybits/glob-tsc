@@ -2,7 +2,7 @@ var path = require('path'),
     mock = require('mock-require');
 
 
-describe("glob-tsc bin script", function () {
+xdescribe("glob-tsc bin script", function () {
     beforeEach(function () {
         mock('../lib/program-helper', './program-helper.mock');
         mock('cross-spawn', './cross-spawn.mock.js');
