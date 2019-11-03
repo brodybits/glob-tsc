@@ -2,10 +2,10 @@
 
 const execa = require('execa');
 
-var
-    helper = require('../lib/program-helper'),
-    options = helper.getOptions(),
-    commandArgs = options.unknown.concat(helper.resolveTSFiles()),
-    proc = execa.sync(helper.getTSCCommand(), commandArgs, { stdio: 'inherit' });
+const helper = require('../lib/program-helper');
 
-module.exports = process;
+const options = helper.getOptions();
+
+const commandArgs = options.unknown.concat(helper.resolveTSFiles());
+
+execa.sync(helper.getTSCCommand(), commandArgs, { stdio: 'inherit' });
