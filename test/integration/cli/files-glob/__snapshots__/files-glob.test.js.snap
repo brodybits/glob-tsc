@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bin/glob-tsc.js --files-glob 1`] = `
+"checking for valid \`tsc\` CLI program
+Version 3.6.4
+valid \`tsc\` CLI program found"
+`;
