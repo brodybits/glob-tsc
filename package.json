@@ -33,7 +33,7 @@
     "@stryker-mutator/html-reporter": "^2.1.0",
     "@stryker-mutator/javascript-mutator": "^2.1.0",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.11.7",
+    "@types/node": "^13.1.6",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "mock-require": "^3.0.3",
