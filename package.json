@@ -30,7 +30,7 @@
   "license": "ISC",
   "devDependencies": {
     "@stryker-mutator/core": "^2.1.0",
-    "@stryker-mutator/html-reporter": "^2.1.0",
+    "@stryker-mutator/html-reporter": "^3.0.2",
     "@stryker-mutator/javascript-mutator": "^2.1.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.11.7",
